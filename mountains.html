@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Destinations</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;      
+          }
+        body{
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .section{
+            margin-top: 30px;
+        }
+        nav a{
+            display: inline-block; 
+            justify-content:right;
+            gap: 15px;
+            color:black;
+            padding: 10px;
+            right: 50px;
+            transition: 0.4s;
+            text-decoration: none;
+        }
+        nav a:hover{
+            color: orange;
+            transform: scale(1.05);
+        }
+        .navbar{
+            display: flex;
+            right: 50px;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .content{
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: whitesmoke;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+        
+        }
+        .content:hover{
+            background-color: orange;
+            color: white;
+        }
+        .section1{
+            background: white;
+            padding: 40px;
+            width: 320px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            margin-left: 25px;  
+            margin-top: 25px;
+        }
+        .section1 img{
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+        }
+        .Card{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .price-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .price-text{
+            margin: 0;
+            font-size: 15px;
+            text-align: left;
+        }
+        .price-text span{
+            color: orange;
+            font-size: 18px;
+        }
+        button{
+            background-color: rgb(240, 120, 35);
+            border-radius: 20px;
+            border: none;
+            width: 100px;
+            height: 40px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: darkorange;
+
+        }
+    </style>
+</head>
+<body>
+    <div style="background: linear-gradient(100deg,rgb(238, 199, 127),rgb(233, 83, 83));; width: 1480px; height: 180px;;">
+            <nav style="display: flex; justify-content: flex-end; gap : 15px; color: white;">
+                <a href="myIndex.html">Home</a>
+                <a>Destinations</a>
+                <a href="Activities.html">Activities</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact Me</a>
+            </nav><br>
+
+            <h1 style="text-align: center;" >
+                Explore Your Favorite Destinations 
+            </h1>
+    </div>
+
+    <nav class="navbar">
+        <a class="content" href="Destinations.html">All Destinations</a>
+        <a class="content" href="Heritage.html">Heritage</a>
+        <a class="content">Mountains</a>
+        <a class="content" href="beach.html">Beach</a>
+        <a class="content" href="Spiritual.html">Spiritual</a>
+    </nav> 
+
+    <div class="section1">
+        <img src="himalayas.jpg">
+        <h2>Himalayas</h2>
+        <p>📍 Himalayas</p>
+        <p>⏳ 5 days, 👥3-7 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹30,999</span></p>
+            <button>Book Now</button>
+        </div>
+    </div>
+</body>
+</html>

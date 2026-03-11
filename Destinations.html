@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Destinations</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;      
+          }
+        body{
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .section{
+            margin-top: 30px;
+        }
+        nav a{
+            display: inline-block; 
+            justify-content:right;
+            gap: 15px;
+            color:black;
+            padding: 10px;
+            right: 50px;
+            transition: 0.4s;
+            text-decoration: none;
+        }
+        nav a:hover{
+            color: orange;
+            transform: scale(1.05);
+        }
+        .navbar{
+            display: flex;
+            right: 50px;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .content{
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: whitesmoke;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+        
+        }
+        .content:hover{
+            background-color: orange;
+            color: white;
+        }
+        .section1{
+            background: white;
+            padding: 40px;
+            width: 320px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            margin-left: 25px;  
+            margin-top: 25px;
+        }
+        .section1 img{
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+        }
+        .Card{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .price-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .price-text{
+            margin: 0;
+            font-size: 15px;
+            text-align: left;
+        }
+        .price-text span{
+            color: orange;
+            font-size: 18px;
+        }
+        button{
+            background-color: rgb(240, 120, 35);
+            border-radius: 20px;
+            border: none;
+            width: 100px;
+            height: 40px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        button:hover{
+            background-color: darkorange;
+
+        }
+    </style>
+</head>
+<body>
+    <div style="background: linear-gradient(100deg,rgb(238, 199, 127),rgb(233, 83, 83));; width: 1480px; height: 180px;;">
+            <nav style="display: flex; justify-content: flex-end; gap : 15px; color: white;">
+                <a href="Index.html">Home</a>
+                <a>Destinations</a>
+                <a href="Activities.html">Activities</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact Me</a>
+            </nav><br>
+
+            <h1 style="text-align: center;" >
+                Explore Your Favorite Destinations 
+            </h1>
+    </div>
+
+    <nav class="navbar">
+        <a class="content">All Destinations</a>
+        <a class="content" href="Heritage.html">Heritage</a>
+        <a class="content" href="mountains.html">Mountains</a>
+        <a class="content" href="beach.html">Beach</a>
+        <a class="content" href="Spiritual.html">Spiritual</a>
+    </nav> 
+
+    <div class="Card">
+    <div class="section1">
+        <img src="tajmahal.jpg">
+        <h2>Taj Mahal</h2>
+        <p>📍 Delhi, Agra</p>
+        <p>⏳ 6 days, 👥3-6 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹25,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="section1">
+        <img src="kerala.jpg">
+        <h2>Kerala Backwater</h2>
+        <p>📍Kerala</p>
+        <p>⏳ 5 days, 👥3-5 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹18,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="section1">
+        <img src="beach.jpg">
+        <h2>Baga Beach</h2>
+        <p>📍 Goa</p>
+        <p>⏳ 5 days, 👥3-5 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹15,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="section1">
+        <img src="Desert.jpg">
+        <h2>Desert Safari</h2>
+        <p>📍 Rajaasthan</p>
+        <p>⏳ 8 days, 👥3-8 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹25,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="section1">
+        <img src="himalayas.jpg">
+        <h2>Himalayas</h2>
+        <p>📍 Himalayas</p>
+        <p>⏳ 5 days, 👥3-7 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹30,999</span></p>
+           <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="section1">
+        <img src="Hyderabad.jpg">
+        <h2>Hyderabad City</h2>
+        <p>📍 Telangana</p>
+        <p>⏳ 5 days, 👥3-6 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹16,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="section1">
+        <img src="pune.webp">
+        <h2>Pune Fort</h2>
+        <p>📍 Maharastra</p>
+        <p>⏳ 5 days, 👥3-6 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹23,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="section1">
+        <img src="varanasi.jpg">
+        <h2>Khasi</h2>
+        <p>📍 Uttar Pradesh</p>
+        <p>⏳ 5 days, 👥3-4 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹32,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <img src="tirupati.jpg">
+        <h2>Tirupathi</h2>
+        <p>📍 Andhra Pradesh</p>
+        <p>⏳ 5 days, 👥3-5 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹20,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="section1">
+        <img src="Ayodha.jpg">
+        <h2>Ram Mandir</h2>
+        <p>📍 Uttar Pradesh</p>
+        <p>⏳ 2 days, 👥3-5 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹18,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <img src="kedarnath.webp">
+        <h2>Kedarnath</h2>
+        <p>📍UttaraKhand</p>
+        <p>⏳ 5 days, 👥3-6 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹38,999</span></p>
+           <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <img src="Nasik.jpg">
+        <h2>Nasik</h2>
+        <p>📍Maharastra</p>
+        <p>⏳ 5 days, 👥3-6 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹23,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <img src="Yadhagiri.jpg">
+        <h2>Yadhagiri Guta</h2>
+        <p>📍Bhonagiri, Telangana</p>
+        <p>⏳ 2 days, 👥3-12 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹14,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <img src="swarnagiri.jpg">
+        <h2>Swarnagiri</h2>
+        <p>📍Bhonagiri, Telangana</p>
+        <p>⏳ 2 days, 👥3-12 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹14,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="section1">
+        <img src="Ananthagiri.webp">
+        <h2>Ananthagiri Hills</h2>
+        <p>📍Vikarabad, Telangana</p>
+        <p>⏳ 2 days, 👥3-10 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹13,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <img src="Araku.jpg">
+        <h2>Araku Valley</h2>
+        <p>📍Andhar Pradesh</p>
+        <p>⏳ 3 days, 👥3-10 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹17,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <img src="Mysore.webp">
+        <h2>Mysore Palace</h2>
+        <p>📍Karnataka</p>
+        <p>⏳ 3 days, 👥3-10 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹20,999</span></p>
+           <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <img src="GoldenTemple.webp">
+        <h2>Golden Temple</h2>
+        <p>📍Punjab</p>
+        <p>⏳ 3 days, 👥3-6 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹29,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="section1">
+        <img src="BorraCaves.webp">
+        <h2>Borra Cave</h2>
+        <p>📍Vishkapatnam</p>
+        <p>⏳ 2 days, 👥3-5 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹19,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="section1">
+        <img src="Andaman.webp">
+        <h2>Andaman Islands</h2>
+        <p>📍Andaman</p>
+        <p>⏳ 3 days, 👥3-5 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹30,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <img src="TeaPlantation.webp">
+        <h2>Tea Plantation</h2>
+        <p>📍Munnar</p>
+        <p>⏳ 3 days, 👥3-5 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹28,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <img src="Lakshadweep.webp">
+        <h2>Lakshadweep Islands</h2>
+        <p>📍Lakshadweep</p>
+        <p>⏳ 4 days, 👥3-5 people</p>
+
+
+        <div class="price-row">
+            <p class="price-text">Starting From<br><span>₹30,999</span></p>
+            <a href="Book.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

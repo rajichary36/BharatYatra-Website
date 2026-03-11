@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+               margin: 0;
+               background-color: #f4f4f4;
+               font-family: Arial, Helvetica, sans-serif ;
+            }
+            nav a{
+               display: inline-block; 
+               justify-content:right;
+               gap: 15px;
+               color:black;
+               padding: 10px;
+               right: 50px;
+               transition: 0.4s;
+               text-decoration: none;
+            }
+            nav a:hover{
+                color: orange;
+                transform: scale(1.05);
+            }
+            .section1{
+                background: white;
+                padding: 40px;
+                width: 320px;
+                text-align: center;
+                border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+                margin-left: 50px;  
+                margin-top: 25px;
+            } 
+           .section1 img{
+               width: 120px;
+               height: 120px;
+               border-radius: 10px;
+            }
+            .Card{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .price-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .price-text{
+            margin: 0;
+            font-size: 15px;
+            text-align: left;
+        }
+        .price-text span{
+            color: orange;
+            font-size: 18px;
+        }
+        button{
+            background-color: rgb(240, 120, 35);
+            border-radius: 20px;
+            border: none;
+            width: 100px;
+            height: 40px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: darkorange;
+        }
+        </style>
+    </head>
+    <body>
+        <div style="background: linear-gradient(100deg,rgb(238, 199, 127),rgb(233, 83, 83));; width: 1480px; height: 180px;;">
+            <nav style="display: flex; justify-content: flex-end; gap : 15px; color: white;">
+                <a href="Index.html">Home</a>
+                <a href="Destinations.html" >Destinations</a>
+                <a>Activities</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html" >Contact Me</a>
+            </nav><br>
+            <h1 style="text-align: center;" >
+                Explore Your Favorite Destinations 
+            </h1>
+    </div><br>
+    <h1 style="text-align: center;">Featured Activities</h1>
+    <p style="text-align: center;">Curated experiences for every type of traveler</p>
+
+    <div class="Card">
+        <div class="section1">
+            <img src="hiking.webp">
+            <h3>Hiking</h3>
+            <p>Explore the Himalayas, Western Ghats, and Eastern ranges with expert mountain guides.</p>
+            
+            <button>Book Now</button>
+        </div>
+
+       
+        <div class="section1">
+            <img src="safari.webp">
+            <h3>Wild Safari</h3>
+            <p>Spot Bengal tigers, Asiatic lions, elephants, and diverse wildlife in national parks.</p>
+            <button>Book Now</button>
+        </div>
+
+        <div class="section1">
+            <img src="scubadriving.webp">
+            <h3>Andaman & Lakshadweep</h3>
+            <p>Scuba Driving had a lots of fun in Andaman and Lakshadweep.</p>
+            <button>Book Now</button>
+        </div>
+        <div class="section1">
+            <img src="cultural.webp">
+            <h3>Culture Festivals</h3>
+            <p>Experience Diwali, Holi, Durga Puja, and other vibrant Indian festivals.</p>
+            <button>Book Now</button>
+        </div>
+
+        <div class="section1">
+            <img src="Tea.webp">
+            <h3>Tea Plantation</h3>
+            <p>Enjoy the Beautiful Experience in Munnar and darjeeling.</p>
+            <button>Book Now</button>
+        </div>
+
+        <div class="section1">
+            <img src="boating.webp">
+            <h3>Boat House Stay</h3>
+            <p>Experience the Boat House stay in kerala. </p>
+            <button>Book Now</button>
+        </div>
+
+    </div>
+    </body>
+</html>

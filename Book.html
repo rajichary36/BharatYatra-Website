@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function showMessage(){
+                alert("Booked Successfully");
+                return true;
+            }
+        </script>
+        <style>
+            body{
+               margin: 0;
+               background-color: #f4f4f4;
+               font-family: Arial, Helvetica, sans-serif ;
+            }
+            nav a{
+               display: inline-block; 
+               justify-content:right;
+               gap: 15px;
+               color:black;
+               padding: 10px;
+               right: 50px;
+               transition: 0.4s;
+               text-decoration: none;
+            }
+            nav a:hover{
+                color: orange;
+                transform: scale(1.05);
+            }
+            .booking{
+                width:450px;
+                margin:50px auto;
+                padding:20px;
+                border:1px solid #ccc;
+                border-radius:10px;
+                box-shadow:0 0 10px #ccc;
+            }
+            .booking h2{
+                text-align:center;
+            }
+            .booking input, .booking select{
+                width:90%;
+                padding:10px;
+                margin:10px 0;
+            }
+            button{
+                width: 97%;
+                padding:10px;
+                background:darkorange;
+                border:none;
+                color:white;
+                font-size:16px;
+                border-radius:5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background: linear-gradient(100deg,rgb(238, 199, 127),rgb(233, 83, 83));; width: 1480px; height: 180px;;">
+            <nav style="display: flex; justify-content: flex-end; gap : 15px; color: white;">
+                <a href="Index.html">Home</a>
+                <a>Destinations</a>
+                <a href="Activities.html">Activities</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html" >Contact Me</a>
+            </nav><br>
+            <h1 style="text-align: center;">Explore Your Favorite Destinations</h1>
+    </div><br><br>
+    <div>
+    <div class="booking">
+        <form>
+        <h2>Book Now</h2>
+        <label>Name</label>
+        <input type="text" placeholder="Enter Name">
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Phone Number">
+        <label>Date</label>
+        <input type="date">
+        <label>Numbers</label>
+        <input type="number" placeholder="Number of People"><br><br>
+
+        <button  onclick="showMessage()">Submit</button>
+
+        
+        </form>
+    </div>
+    </div>
+    </body>
+</html>
