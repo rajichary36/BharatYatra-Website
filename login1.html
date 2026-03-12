@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body{
+                margin: 0;
+                justify-content:center;
+                display: flex;
+                align-items: center;
+                height:90vh;
+            }
+            .content{
+                background:white;
+                padding:40px;
+                width:300px;
+                border-radius:15px;
+                box-shadow:0 10px 25px rgba(0,0,0,0.2);     
+              }
+            h2{
+                text-align: center;
+            }
+            .button-group {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                 margin-top: 30px;
+            }
+        
+            .button-group button {
+                padding: 12px 30px;
+                 margin: 5px;
+                font-size: 16px;
+                border: 1px solid #333;
+                cursor: pointer;
+                flex: 1;
+                min-width: 120px;
+                max-width: 200px;
+            }
+        
+        .submit-btn {
+            background-color: #1a3a8f;
+            color: white;
+            border-radius: 10px;
+            width: 20px;
+        }
+        label{
+            display:block;
+            text-align:left;
+            margin-top:10px;
+        }
+        input{
+            width:100%;
+            padding:8px;
+            border-radius:8px;
+            border:1px solid #ccc;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <div class="content" >
+            <h2>Login</h2><br>
+        <form action="myIndex.html">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" pattern="{0-9}{6}" maxlength="6" required>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="submit-btn">Login</button>
+                </div>
+        </div>
+    </body>
+</html>
